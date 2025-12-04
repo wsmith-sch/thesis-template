@@ -1,0 +1,29 @@
+\ProvidesPackage{readme-box}
+\usepackage[skins,breakable]{tcolorbox}
+
+\newtcolorbox{README}{%
+  skin=enhanced jigsaw,
+  colback=gray!5!white,
+  colbacktitle=yellow!1!white,
+  coltitle=black,
+  borderline={0.5mm}{0mm}{red!20!white},
+  borderline={0.5mm}{0mm}{black,dashed},
+  attach boxed title to top center={xshift=-60mm, yshift=-2.75mm},
+  boxed title style={boxrule=0.4pt},
+  title={\textbf{README:} },
+  arc=0mm
+}
+
+\newtcolorbox{README-alt}[2][]{%
+  skin=enhanced jigsaw,
+  colback=gray!5!white,
+  colbacktitle=yellow!1!white,
+  coltitle=black,
+  borderline={0.5mm}{0mm}{red!20!white},
+  borderline={0.5mm}{0mm}{black,dashed},
+  attach boxed title to top center={xshift=#1, yshift=-2.75mm},
+  boxed title style={boxrule=0.4pt},
+  title={\textbf{README:} (\textit{#2})},
+  arc=0mm
+}
+

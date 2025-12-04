@@ -1,0 +1,45 @@
+\chapter*{TABLE OF CONTENTS}
+\addcontentsline{toc}{chapter}{TABLE OF CONTENTS}
+
+\begin{singlespace}
+  \renewcommand\contentsname{\normalfont} {}
+
+  \begingroup
+  \let\clearpage\relax
+  \let\cleardoublepage\relax
+  \tableofcontents
+  \endgroup
+
+\end{singlespace}
+
+\newpage
+
+\chapter*{LIST OF FIGURES}
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+
+\begin{singlespace}
+\renewcommand{\listfigurename}{}
+
+  \begingroup
+  \let\clearpage\relax
+  \let\cleardoublepage\relax
+  \listoffigures
+  \endgroup
+
+\end{singlespace}
+\newpage
+
+\chapter*{LIST OF TABLES}
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+
+\begin{singlespace}
+\renewcommand{\listtablename}{}
+
+  \begingroup
+  \let\clearpage\relax
+  \let\cleardoublepage\relax
+  \listoftables
+  \endgroup
+
+\end{singlespace}
+\newpage

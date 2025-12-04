@@ -1,0 +1,26 @@
+\DocumentMetadata{uncompress,lang=en,
+  tagging=on,
+  tagging-setup={math/setup=mathml-SE},
+pdfstandard=ua-2,pdfstandard=a-4f}
+
+\documentclass[12pt]{report}
+
+% can be removed when we strip the template from examples
+\usepackage[base]{babel}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{readme-box}
+
+% Font stuff
+%\usepackage{newpxtext} % Palatino
+%\usepackage{times} % TNR look-alike
+\usepackage{fontspec}
+\setmainfont{EB Garamond} % https://fonts.google.com/specimen/EB+Garamond
+
+% sensible packages: maybe move to required-config
+\usepackage{graphicx}
+\usepackage{amsmath, amsthm}
+\usepackage[hidelinks]{hyperref}
+
+% this is stuff the user should not touch (unless they know what they're doing)
+\usepackage{required-config}

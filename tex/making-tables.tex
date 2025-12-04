@@ -1,0 +1,65 @@
+\chapter{Making Accessible Tables}
+\section{Simple Examples}
+Here is a very basic table with a header:
+
+\begin{table}[H]
+  \centering
+  \tagpdfsetup{table/header-rows={1,2}}
+  \begin{tabular}{lr}
+    \multicolumn{2}{c}{Example}\\
+    Name&Value\\
+    This& 11 \\
+    That & 2
+  \end{tabular}
+  \caption{Some table}
+\end{table}
+
+
+\begin{README}
+  TODO: make some comment about the header row, regularity. Look at the next
+  example.
+\end{README}
+
+\begin{README-alt}[-54mm]{some title}
+  I think I prefer the former
+\end{README-alt}
+
+\noindent Here is another table showing some data that is input from
+the \texttt{tables}
+directory.
+
+\input{tables/table.tex}
+
+This is helpful for maintaining large projects
+
+\newpage
+
+\section{Using Table-like Environments without Tagging}
+
+Here we use a \texttt{tabular} environment just align some content---
+we need to tell \LaTeX \ not to tag this:
+
+\begin{center}
+  \tagpdfsetup{table/tagging=false}
+  \begin{tabular}{ccc}
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+    &
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+    &
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+    \\
+
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+    &
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+    &
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+    \\
+
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+    &
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+    &
+    \includegraphics[height=2cm,alt={Some image}]{figs/example-2.pdf}
+  \end{tabular}
+\end{center}

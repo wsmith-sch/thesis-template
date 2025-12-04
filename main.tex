@@ -1,0 +1,30 @@
+% !TeX program = lualatex
+
+\input{tex/preamble}
+
+\begin{document}
+
+\input{tex/title-page}
+
+\startpreface
+
+\input{tex/abstract}
+\input{tex/dedication}
+\input{tex/acknowledgements}
+\input{tex/contributors}
+\input{tex/nomenclature}
+\input{tex/contents}
+
+\startmain
+
+\input{tex/equations}
+\input{tex/tagging-images}
+\input{tex/making-tables}
+\input{tex/fake-text}
+
+\begin{appendices}
+  \input{tex/appendix1}
+  \input{tex/appendix2}
+\end{appendices}
+
+\end{document}

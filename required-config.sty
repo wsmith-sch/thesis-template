@@ -1,0 +1,44 @@
+\ProvidesPackage{required-config}
+
+% Required for accessibility
+\usepackage{unicode-math}
+
+\usepackage[letterpaper]{geometry}
+\geometry{verbose, margin=1in}
+
+\usepackage{indentfirst}
+\usepackage[doublespacing]{setspace}
+
+\usepackage[rm, tiny, center, compact]{titlesec}
+
+\usepackage{etoolbox}
+
+\usepackage{longtable}
+
+\usepackage[titletoc]{appendix}
+
+% style for pages after the title, before main content
+\newcommand{\startpreface}{
+  \pagestyle{plain}
+  \pagenumbering{roman}
+  \setcounter{page}{2}
+}
+
+% style for main content
+\newcommand{\startmain}{
+  \pagestyle{plain}
+  \pagenumbering{arabic}
+  \setcounter{page}{1}
+}
+
+\titleformat{\chapter}{\bf\centering\normalsize}{\thechapter.}{1em}{}
+\titleformat{\section}{\bf}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bf}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\it}{\thesubsubsection}{1em}{}
+
+\makeatletter
+\renewcommand{\numberline}[1]{#1.\quad} % adds period in TOC
+\makeatother
+
+\setcounter{secnumdepth}{5}
+

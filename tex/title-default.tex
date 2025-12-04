@@ -1,0 +1,68 @@
+\hypersetup{
+  pdftitle={\manuscripttitle},
+  pdfauthor={\fullname},
+  pdfsubject={\papertype},
+}
+
+\begin{titlepage}
+  \begin{center}
+    \begin{doublespace}
+
+      \MakeUppercase{  \manuscripttitle}
+    \end{doublespace}
+    \vspace{4em}
+
+    A \papertype
+
+    by
+
+    \MakeUppercase{\fullname}
+
+    \vspace{4em}
+
+    \begin{singlespace}
+
+      Submitted to the Graduate and Professional School of \\
+      Texas A\&M University \\
+
+      in partial fulfillment of the requirements for the degree of \\
+    \end{singlespace}
+
+    \MakeUppercase{\degree}
+    \par
+  \end{center}
+  \vspace{2em}
+  \begin{doublespace}
+
+  \end{doublespace}
+
+  %\tagpdfsetup{table/tagging=presentation}
+  \tagpdfsetup{table/tagging=false}
+  \begin{tabular}{ll}
+    & \\
+    & \cr
+    % ifdef to toggle primary chair vs co-chair arrangement
+    \ifdefempty{\chairtwo}{ Chair of Committee, & \chairone\\ }
+    { Co-Chairs of Committee, & \chairone\\ & \chairtwo\\ }
+    %
+    Committee Members, & \memberone\\
+    & \membertwo\\
+    & \memberthree\\
+    Head of Department, & \depthead\\
+
+  \end{tabular}
+
+  \vspace{3em}
+
+  \begin{center}
+    \gradmonth \hspace{2pt} \gradyear
+
+    \vspace{3em}
+
+    Major Subject: \department \par
+    \vspace{3em}
+    Copyright \gradyear \hspace{.5em}\fullname
+    \par
+  \end{center}
+\end{titlepage}
+\newpage
